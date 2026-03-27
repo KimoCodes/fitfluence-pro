@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programs Manager</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="brand">FitFunnel Pro <span class="role">Owner</span></div>
+      <nav class="nav">
+        <a href="index.html">Dashboard</a>
+        <a href="admin-programs.html" class="active">Programs</a>
+        <a href="admin-products.html">Store</a>
+        <a href="admin-orders.html">Orders</a>
+        <a href="admin-clients.html">Clients</a>
+        <a href="admin-bookings.html">Bookings</a>
+        <a href="admin-sales.html">Sales</a>
+        <a href="admin-content.html">Content</a>
+        <a href="admin-settings.html">Settings</a>
+      </nav>
+      <div class="sidebar-card">
+        <p class="mini">Cross-Sell Tip</p>
+        <h3 style="margin:.35rem 0;">Programs Can Feed Store Sales</h3>
+        <p class="muted">Attach add-ons and kits to coaching plans for stronger order value</p>
+        <a href="admin-products.html" class="btn btn-primary btn-full" style="margin-top:.8rem;">Open Store</a>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Admin / Owner</p>
+          <h1>Programs Manager</h1>
+        </div>
+        <div class="actions">
+          <input class="search" type="text" placeholder="Search clients, programs, products...">
+          <a href="logout.html" class="btn btn-secondary">Logout</a>
+        </div>
+      </header>
+
+      <section class="grid2">
+        <article class="card table-card">
+          <div class="head">
+            <div>
+              <p class="eyebrow">Programs</p>
+              <h2>Offer Library</h2>
+            </div>
+            <a href="#" class="btn btn-primary">Add Program</a>
+          </div>
+          <table class="table">
+            <thead>
+              <tr><th>Program</th><th>Price</th><th>Type</th><th>Status</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>30-Day Glute Growth</td><td>$49</td><td>Digital</td><td><span class="tag green">Active</span></td></tr>
+              <tr><td>Fat Burn & Sculpt</td><td>$59</td><td>Digital</td><td><span class="tag green">Active</span></td></tr>
+              <tr><td>VIP Coaching</td><td>$199</td><td>Service</td><td><span class="tag blue">Featured</span></td></tr>
+              <tr><td>Meal Plan Add-On</td><td>$29</td><td>Upsell</td><td><span class="tag yellow">Draft</span></td></tr>
+            </tbody>
+          </table>
+        </article>
+
+        <article class="card panel">
+          <div class="head">
+            <div>
+              <p class="eyebrow">Edit Program</p>
+              <h2>Program Details</h2>
+            </div>
+          </div>
+          <div class="form two">
+            <div><div class="mini" style="margin-bottom:.35rem;">Program Name</div><input class="input" value="VIP Coaching"></div>
+            <div><div class="mini" style="margin-bottom:.35rem;">Price</div><input class="input" value="$199"></div>
+          </div>
+          <div class="form" style="margin-top:.9rem;">
+            <div>
+              <div class="mini" style="margin-bottom:.35rem;">Category</div>
+              <select class="select"><option>Service</option><option>Digital</option><option>Upsell</option></select>
+            </div>
+            <div>
+              <div class="mini" style="margin-bottom:.35rem;">Short Description</div>
+              <textarea class="textarea">Custom training plan, weekly check-ins, accountability, and priority support.</textarea>
+            </div>
+          </div>
+          <div class="actions" style="margin-top:1rem;">
+            <a href="#" class="btn btn-primary">Save Changes</a>
+            <a href="#" class="btn btn-secondary">Duplicate</a>
+          </div>
+          <div class="note" style="margin-top:1rem;">Programs stay here, while physical products, bundles, and public offers now live in the dedicated store manager.</div>
+        </article>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

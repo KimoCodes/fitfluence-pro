@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Owner Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="brand">FitFunnel Pro <span class="role">Owner</span></div>
+      <nav class="nav">
+        <a href="index.html" class="active">Dashboard</a>
+        <a href="admin-programs.html">Programs</a>
+        <a href="admin-products.html">Store</a>
+        <a href="admin-orders.html">Orders</a>
+        <a href="admin-clients.html">Clients</a>
+        <a href="admin-bookings.html">Bookings</a>
+        <a href="admin-sales.html">Sales</a>
+        <a href="admin-content.html">Content</a>
+        <a href="admin-settings.html">Settings</a>
+      </nav>
+      <div class="sidebar-card">
+        <p class="mini">Store Snapshot</p>
+        <h3 style="margin:.35rem 0;">18 Orders This Week</h3>
+        <p class="muted">6 shipped kits • 9 digital unlocks • 3 carts waiting for follow-up</p>
+        <a href="admin-products.html" class="btn btn-primary btn-full" style="margin-top:.8rem;">Manage Store</a>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Admin / Owner</p>
+          <h1>Owner Dashboard</h1>
+        </div>
+        <div class="actions">
+          <input class="search" type="text" placeholder="Search clients, orders, products...">
+          <a href="logout.html" class="btn btn-secondary">Logout</a>
+        </div>
+      </header>
+
+      <section class="grid4">
+        <article class="card stat">
+          <p class="mini">Monthly Revenue</p>
+          <h2>$8,420</h2>
+          <span class="muted">+18% from last month</span>
+        </article>
+        <article class="card stat">
+          <p class="mini">Store Orders</p>
+          <h2>46</h2>
+          <span class="muted">Digital and physical product sales</span>
+        </article>
+        <article class="card stat">
+          <p class="mini">Bookings</p>
+          <h2>32</h2>
+          <span class="muted">11 pending approval</span>
+        </article>
+        <article class="card stat">
+          <p class="mini">Active Clients</p>
+          <h2>74</h2>
+          <span class="muted">12 in VIP coaching</span>
+        </article>
+      </section>
+
+      <section class="content" style="margin-top:1rem;">
+        <div class="grid2">
+          <article class="card panel">
+            <div class="head">
+              <div>
+                <p class="eyebrow">Sales Overview</p>
+                <h2>Revenue Trend</h2>
+              </div>
+              <span class="tag green">Healthy</span>
+            </div>
+            <div class="chart">
+              <div class="bars">
+                <div class="bar"><span style="height:42%"></span><label>Jan</label></div>
+                <div class="bar"><span style="height:58%"></span><label>Feb</label></div>
+                <div class="bar"><span style="height:70%"></span><label>Mar</label></div>
+                <div class="bar"><span style="height:78%"></span><label>Apr</label></div>
+                <div class="bar"><span style="height:88%"></span><label>May</label></div>
+                <div class="bar"><span style="height:93%"></span><label>Jun</label></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="card panel">
+            <div class="head">
+              <div>
+                <p class="eyebrow">Owner Checklist</p>
+                <h2>Priority Actions</h2>
+              </div>
+            </div>
+            <div class="list">
+              <div class="item flex">
+                <div>
+                  <strong>Publish new product bundle</strong>
+                  <div class="muted">Summer shred kit is saved as draft</div>
+                </div>
+                <span class="tag yellow">Store</span>
+              </div>
+              <div class="item flex">
+                <div>
+                  <strong>Pack 3 supplement orders</strong>
+                  <div class="muted">Two Kigali deliveries and one pickup</div>
+                </div>
+                <span class="tag blue">Orders</span>
+              </div>
+              <div class="item flex">
+                <div>
+                  <strong>Review refund request</strong>
+                  <div class="muted">One payment issue needs attention</div>
+                </div>
+                <span class="tag red">Urgent</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card panel">
+            <div class="head">
+              <div>
+                <p class="eyebrow">Recent Orders</p>
+                <h2>Latest Purchases</h2>
+              </div>
+              <a href="admin-orders.html" class="btn btn-secondary">Open Orders</a>
+            </div>
+            <table class="table">
+              <thead>
+                <tr><th>Client</th><th>Offer</th><th>Amount</th><th>Status</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Amara J.</td><td>Booty Builder Band Set</td><td>$38</td><td><span class="tag blue">Packing</span></td></tr>
+                <tr><td>Nina K.</td><td>Fat Burn & Sculpt</td><td>$59</td><td><span class="tag green">Delivered</span></td></tr>
+                <tr><td>Sophia L.</td><td>VIP Coaching</td><td>$199</td><td><span class="tag yellow">Pending</span></td></tr>
+              </tbody>
+            </table>
+          </article>
+
+          <article class="card panel">
+            <div class="head">
+              <div>
+                <p class="eyebrow">Quick Access</p>
+                <h2>Commerce Tools</h2>
+              </div>
+            </div>
+            <div class="list">
+              <a class="item" href="admin-products.html">
+                <strong>Store Manager</strong>
+                <div class="muted">Create products, set stock, and feature best sellers</div>
+              </a>
+              <a class="item" href="admin-orders.html">
+                <strong>Orders Queue</strong>
+                <div class="muted">Track payments, fulfillment, and delivery status</div>
+              </a>
+              <a class="item" href="admin-sales.html">
+                <strong>Revenue Analytics</strong>
+                <div class="muted">Measure product, coaching, and bundle performance</div>
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <div class="grid2">
+          <article class="card panel">
+            <div class="head">
+              <div>
+                <p class="eyebrow">Store Funnel</p>
+                <h2>Top Product Sources</h2>
+              </div>
+            </div>
+            <div class="list">
+              <div class="item">
+                <div class="between"><strong>Instagram Shop Story</strong><span>46%</span></div>
+                <div class="kpi"><span style="width:46%"></span></div>
+              </div>
+              <div class="item">
+                <div class="between"><strong>Homepage CTA</strong><span>34%</span></div>
+                <div class="kpi"><span style="width:34%"></span></div>
+              </div>
+              <div class="item">
+                <div class="between"><strong>Coach Upsells</strong><span>20%</span></div>
+                <div class="kpi"><span style="width:20%"></span></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="card panel">
+            <div class="head">
+              <div>
+                <p class="eyebrow">Today</p>
+                <h2>Delivery Schedule</h2>
+              </div>
+            </div>
+            <div class="list">
+              <div class="item">
+                <strong>11:00 AM — Courier Pickup</strong>
+                <div class="muted">2 resistance band kits and 1 waist trainer</div>
+              </div>
+              <div class="item">
+                <strong>4:30 PM — Group Coaching</strong>
+                <div class="muted">Offer checkout upsell for recovery guide</div>
+              </div>
+              <div class="item">
+                <strong>7:00 PM — VIP Check-In</strong>
+                <div class="muted">Recommend nutrition planner add-on</div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

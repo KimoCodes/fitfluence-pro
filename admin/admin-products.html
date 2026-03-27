@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Store Manager</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="brand">FitFunnel Pro <span class="role">Owner</span></div>
+      <nav class="nav">
+        <a href="index.html">Dashboard</a>
+        <a href="admin-programs.html">Programs</a>
+        <a href="admin-products.html" class="active">Store</a>
+        <a href="admin-orders.html">Orders</a>
+        <a href="admin-clients.html">Clients</a>
+        <a href="admin-bookings.html">Bookings</a>
+        <a href="admin-sales.html">Sales</a>
+        <a href="admin-content.html">Content</a>
+        <a href="admin-settings.html">Settings</a>
+      </nav>
+      <div class="sidebar-card">
+        <p class="mini">Catalog Status</p>
+        <h3 style="margin:.35rem 0;">12 Active Products</h3>
+        <p class="muted">8 digital items • 4 physical products • 2 bundles featured</p>
+        <a href="admin-orders.html" class="btn btn-primary btn-full" style="margin-top:.8rem;">Review Orders</a>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Admin / Commerce</p>
+          <h1>Store Manager</h1>
+        </div>
+        <div class="actions">
+          <input class="search" type="text" placeholder="Search products, bundles, SKUs...">
+          <a href="logout.html" class="btn btn-secondary">Logout</a>
+        </div>
+      </header>
+
+      <section class="grid4">
+        <article class="card stat">
+          <p class="mini">Active Products</p>
+          <h2>12</h2>
+          <span class="muted">Visible to clients and site visitors</span>
+        </article>
+        <article class="card stat">
+          <p class="mini">Low Stock</p>
+          <h2>3</h2>
+          <span class="muted">Need refill before next launch</span>
+        </article>
+        <article class="card stat">
+          <p class="mini">Draft Items</p>
+          <h2>2</h2>
+          <span class="muted">Ready for final pricing review</span>
+        </article>
+        <article class="card stat">
+          <p class="mini">Featured Offers</p>
+          <h2>4</h2>
+          <span class="muted">Pinned on sales and checkout flows</span>
+        </article>
+      </section>
+
+      <section class="grid2" style="margin-top:1rem;">
+        <article class="card table-card">
+          <div class="head">
+            <div>
+              <p class="eyebrow">Catalog</p>
+              <h2>Products & Bundles</h2>
+            </div>
+            <a href="#" class="btn btn-primary">Add Product</a>
+          </div>
+          <table class="table">
+            <thead>
+              <tr><th>Item</th><th>Price</th><th>Type</th><th>Stock</th><th>Status</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Booty Builder Band Set</td><td>$38</td><td>Physical</td><td>26</td><td><span class="tag green">Live</span></td></tr>
+              <tr><td>30-Day Shred Meal Guide</td><td>$24</td><td>Digital</td><td>Unlimited</td><td><span class="tag blue">Featured</span></td></tr>
+              <tr><td>Transformation Starter Bundle</td><td>$79</td><td>Bundle</td><td>18</td><td><span class="tag green">Live</span></td></tr>
+              <tr><td>Waist Trainer</td><td>$29</td><td>Physical</td><td>5</td><td><span class="tag yellow">Low Stock</span></td></tr>
+              <tr><td>Summer Shred Kit</td><td>$99</td><td>Bundle</td><td>12</td><td><span class="tag yellow">Draft</span></td></tr>
+            </tbody>
+          </table>
+        </article>
+
+        <article class="card panel">
+          <div class="head">
+            <div>
+              <p class="eyebrow">Create / Edit</p>
+              <h2>Sellable Product Setup</h2>
+            </div>
+          </div>
+          <div class="form two">
+            <div>
+              <div class="mini" style="margin-bottom:.35rem;">Product Name</div>
+              <input class="input" value="Summer Shred Kit">
+            </div>
+            <div>
+              <div class="mini" style="margin-bottom:.35rem;">Price</div>
+              <input class="input" value="$99">
+            </div>
+            <div>
+              <div class="mini" style="margin-bottom:.35rem;">Category</div>
+              <select class="select">
+                <option>Bundle</option>
+                <option>Physical</option>
+                <option>Digital</option>
+                <option>Service</option>
+              </select>
+            </div>
+            <div>
+              <div class="mini" style="margin-bottom:.35rem;">Inventory</div>
+              <input class="input" value="12 units">
+            </div>
+          </div>
+          <div class="form" style="margin-top:.9rem;">
+            <div>
+              <div class="mini" style="margin-bottom:.35rem;">Short Description</div>
+              <textarea class="textarea">Bundle the resistance bands, quick-start guide, and meal planner into one offer that can be sold directly to clients or first-time site shoppers.</textarea>
+            </div>
+            <div class="form two">
+              <div>
+                <div class="mini" style="margin-bottom:.35rem;">Visibility</div>
+                <select class="select">
+                  <option>Public on website</option>
+                  <option>Clients only</option>
+                  <option>Private link only</option>
+                </select>
+              </div>
+              <div>
+                <div class="mini" style="margin-bottom:.35rem;">Delivery Type</div>
+                <select class="select">
+                  <option>Ship + email receipt</option>
+                  <option>Digital download</option>
+                  <option>Manual fulfillment</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="actions" style="margin-top:1rem;">
+            <a href="#" class="btn btn-primary">Save Product</a>
+            <a href="#" class="btn btn-secondary">Duplicate Offer</a>
+          </div>
+          <div class="note" style="margin-top:1rem;">Use this page to decide which offers are public, which are client-only, and which need inventory tracking before you promote them.</div>
+        </article>
+      </section>
+
+      <section class="grid2" style="margin-top:1rem;">
+        <article class="card panel">
+          <div class="head">
+            <div>
+              <p class="eyebrow">Merchandising</p>
+              <h2>Homepage Sales Slots</h2>
+            </div>
+          </div>
+          <div class="list">
+            <div class="item flex">
+              <div>
+                <strong>Hero CTA Product</strong>
+                <div class="muted">Transformation Starter Bundle</div>
+              </div>
+              <span class="tag blue">Pinned</span>
+            </div>
+            <div class="item flex">
+              <div>
+                <strong>Post-Checkout Upsell</strong>
+                <div class="muted">30-Day Shred Meal Guide</div>
+              </div>
+              <span class="tag green">Live</span>
+            </div>
+            <div class="item flex">
+              <div>
+                <strong>Client Dashboard Offer</strong>
+                <div class="muted">Recovery & Mobility Guide</div>
+              </div>
+              <span class="tag yellow">Testing</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card panel">
+          <div class="head">
+            <div>
+              <p class="eyebrow">Sales Rules</p>
+              <h2>Admin Selling Permissions</h2>
+            </div>
+          </div>
+          <div class="list">
+            <div class="item">
+              <strong>Sell to site visitors</strong>
+              <div class="muted">Products marked public can be promoted on the website and sold without an existing client record.</div>
+            </div>
+            <div class="item">
+              <strong>Sell to existing clients</strong>
+              <div class="muted">Client-only offers can be shared privately after coaching calls, check-ins, or onboarding.</div>
+            </div>
+            <div class="item">
+              <strong>Control inventory and fulfillment</strong>
+              <div class="muted">Physical items stay manageable by tracking stock and pushing new orders into the orders queue.</div>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

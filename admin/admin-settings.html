@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Business Settings</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="brand">FitFunnel Pro <span class="role">Owner</span></div>
+      <nav class="nav">
+        <a href="index.html">Dashboard</a>
+        <a href="admin-programs.html">Programs</a>
+        <a href="admin-products.html">Store</a>
+        <a href="admin-orders.html">Orders</a>
+        <a href="admin-clients.html">Clients</a>
+        <a href="admin-bookings.html">Bookings</a>
+        <a href="admin-sales.html">Sales</a>
+        <a href="admin-content.html">Content</a>
+        <a href="admin-settings.html" class="active">Settings</a>
+      </nav>
+      <div class="sidebar-card">
+        <p class="mini">Business Setup</p>
+        <h3 style="margin:.35rem 0;">Commerce Ready</h3>
+        <p class="muted">Brand, contact details, and selling workflow now support products and client offers</p>
+        <a href="admin-sales.html" class="btn btn-primary btn-full" style="margin-top:.8rem;">View Performance</a>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Admin / Owner</p>
+          <h1>Business Settings</h1>
+        </div>
+        <div class="actions">
+          <input class="search" type="text" placeholder="Search settings, brand, selling rules...">
+          <a href="logout.html" class="btn btn-secondary">Logout</a>
+        </div>
+      </header>
+
+      <section class="grid2">
+        <article class="card panel">
+          <div class="head">
+            <div>
+              <p class="eyebrow">Business Settings</p>
+              <h2>Brand & Contact</h2>
+            </div>
+          </div>
+          <div class="form two">
+            <div><div class="mini" style="margin-bottom:.35rem;">Brand Name</div><input class="input" value="FitFunnel Pro"></div>
+            <div><div class="mini" style="margin-bottom:.35rem;">Business Email</div><input class="input" value="hello@example.com"></div>
+            <div><div class="mini" style="margin-bottom:.35rem;">Instagram</div><input class="input" value="@fitbrand"></div>
+            <div><div class="mini" style="margin-bottom:.35rem;">TikTok</div><input class="input" value="@fitbrand"></div>
+          </div>
+          <div class="actions" style="margin-top:1rem;">
+            <a href="#" class="btn btn-primary">Save Settings</a>
+          </div>
+        </article>
+
+        <article class="card panel">
+          <div class="head">
+            <div>
+              <p class="eyebrow">Owner Notes</p>
+              <h2>Admin Permissions</h2>
+            </div>
+          </div>
+          <div class="note">The admin now has dedicated pages to create products, publish public or client-only offers, and process orders from payment through delivery.</div>
+          <div class="list" style="margin-top:1rem;">
+            <div class="item"><strong>Store page</strong><div class="muted">Manage product names, prices, stock, visibility, and delivery type.</div></div>
+            <div class="item"><strong>Orders page</strong><div class="muted">Handle fulfillment, receipts, shipping, and payment issues.</div></div>
+            <div class="item"><strong>Sales page</strong><div class="muted">Review how product and coaching revenue perform together.</div></div>
+          </div>
+        </article>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

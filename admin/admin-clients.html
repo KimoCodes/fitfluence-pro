@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Client Manager</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="brand">FitFunnel Pro <span class="role">Owner</span></div>
+      <nav class="nav">
+        <a href="index.html">Dashboard</a>
+        <a href="admin-programs.html">Programs</a>
+        <a href="admin-products.html">Store</a>
+        <a href="admin-orders.html">Orders</a>
+        <a href="admin-clients.html" class="active">Clients</a>
+        <a href="admin-bookings.html">Bookings</a>
+        <a href="admin-sales.html">Sales</a>
+        <a href="admin-content.html">Content</a>
+        <a href="admin-settings.html">Settings</a>
+      </nav>
+      <div class="sidebar-card">
+        <p class="mini">Client Commerce</p>
+        <h3 style="margin:.35rem 0;">Upsell From Active Plans</h3>
+        <p class="muted">Recommend store products to clients based on goals, risk, or progress stage</p>
+        <a href="admin-orders.html" class="btn btn-primary btn-full" style="margin-top:.8rem;">View Orders</a>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Admin / Owner</p>
+          <h1>Client Manager</h1>
+        </div>
+        <div class="actions">
+          <input class="search" type="text" placeholder="Search clients, programs, orders...">
+          <a href="logout.html" class="btn btn-secondary">Logout</a>
+        </div>
+      </header>
+
+      <section class="grid2">
+        <article class="card table-card">
+          <div class="head">
+            <div>
+              <p class="eyebrow">Clients</p>
+              <h2>Active Client List</h2>
+            </div>
+            <a href="#" class="btn btn-primary">Add Client</a>
+          </div>
+          <table class="table">
+            <thead>
+              <tr><th>Name</th><th>Plan</th><th>Last Activity</th><th>Status</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Noella B.</td><td>VIP Coaching</td><td>Today</td><td><span class="tag green">Active</span></td></tr>
+              <tr><td>Sara T.</td><td>Glute Growth</td><td>Yesterday</td><td><span class="tag green">Active</span></td></tr>
+              <tr><td>Jade K.</td><td>Fat Burn & Sculpt</td><td>3 days ago</td><td><span class="tag yellow">At Risk</span></td></tr>
+              <tr><td>Anna P.</td><td>VIP Coaching</td><td>Today</td><td><span class="tag blue">Check-In Due</span></td></tr>
+            </tbody>
+          </table>
+        </article>
+
+        <article class="card panel">
+          <div class="head">
+            <div>
+              <p class="eyebrow">Client Summary</p>
+              <h2>Selected Client</h2>
+            </div>
+          </div>
+          <div class="list">
+            <div class="item"><strong>Noella B.</strong><div class="muted">VIP Coaching • Joined 6 weeks ago</div></div>
+            <div class="item"><strong>Goals</strong><div class="muted">Muscle growth, confidence, consistent weekly schedule</div></div>
+            <div class="item"><strong>Progress</strong><div class="muted">82% completion rate</div><div class="kpi"><span style="width:82%"></span></div></div>
+            <div class="item"><strong>Recommended Add-On</strong><div class="muted">Recovery & Mobility Guide plus resistance band kit</div></div>
+          </div>
+        </article>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

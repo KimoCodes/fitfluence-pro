@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Session | FitFunnel Client</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="client.css">
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="brand">FitFunnel Pro <span class="role">Client</span></div>
+      <nav class="nav"><a href="index.html" class="">Dashboard</a><a href="client-programs.html" class="">My Programs</a><a href="client-progress.html" class="">Progress</a><a href="client-bookings.html" class="active">Bookings</a><a href="client-nutrition.html" class="">Nutrition</a><a href="client-messages.html" class="">Messages</a><a href="client-store.html" class="">Store</a><a href="client-orders.html" class="">Orders</a><a href="client-settings.html" class="">Settings</a></nav>
+      <div class="sidebar-card">
+        <p class="mini">Current Plan</p>
+        <h3 style="margin:.35rem 0;">VIP Coaching</h3>
+        <p class="muted">Next check-in: Friday, 7:00 PM</p>
+        <a href="client-bookings.html" class="btn btn-primary btn-full" style="margin-top:.8rem;">Book Session</a>
+      </div>
+    </aside>
+    <main class="main">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Client Portal</p>
+          <h1>Book a Session</h1>
+        </div>
+        <div class="actions">
+          <input class="search" type="text" placeholder="Search workouts, meals, products...">
+          <a href="logout.html" class="btn btn-secondary">Logout</a>
+        </div>
+      </header>
+      
+<section class="grid2">
+  <article class="card panel">
+    <div class="head"><div><p class="eyebrow">Book Session</p><h2>Select a Time Slot</h2></div></div>
+    <div class="list">
+      <div class="item flex"><div><strong>Apr 8 • 7:00 PM</strong><div class="muted">1-on-1 Coaching</div></div><a href="#" class="btn btn-primary">Choose</a></div>
+      <div class="item flex"><div><strong>Apr 9 • 1:00 PM</strong><div class="muted">Discovery Call</div></div><a href="#" class="btn btn-primary">Choose</a></div>
+      <div class="item flex"><div><strong>Apr 10 • 6:00 PM</strong><div class="muted">Group Session</div></div><a href="#" class="btn btn-primary">Choose</a></div>
+    </div>
+  </article>
+  <article class="card panel">
+    <div class="head"><div><p class="eyebrow">Request Details</p><h2>Session Notes</h2></div></div>
+    <div class="form">
+      <div><div class="mini" style="margin-bottom:.35rem;">Session Goal</div><select class="select"><option>Form Review</option><option>Program Update</option><option>Mindset & Accountability</option></select></div>
+      <div><div class="mini" style="margin-bottom:.35rem;">Notes for Trainer</div><textarea class="textarea">I'd like help adjusting lower-body volume and cardio balance.</textarea></div>
+    </div>
+    <div class="actions" style="margin-top:1rem;"><a href="#" class="btn btn-primary">Submit Request</a></div>
+  </article>
+</section>
+
+    </main>
+  </div>
+</body>
+</html>

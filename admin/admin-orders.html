@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orders Queue</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="brand">FitFunnel Pro <span class="role">Owner</span></div>
+      <nav class="nav">
+        <a href="index.html">Dashboard</a>
+        <a href="admin-programs.html">Programs</a>
+        <a href="admin-products.html">Store</a>
+        <a href="admin-orders.html" class="active">Orders</a>
+        <a href="admin-clients.html">Clients</a>
+        <a href="admin-bookings.html">Bookings</a>
+        <a href="admin-sales.html">Sales</a>
+        <a href="admin-content.html">Content</a>
+        <a href="admin-settings.html">Settings</a>
+      </nav>
+      <div class="sidebar-card">
+        <p class="mini">Fulfillment</p>
+        <h3 style="margin:.35rem 0;">7 Orders Need Action</h3>
+        <p class="muted">2 waiting payment confirmation • 3 packing • 2 shipping today</p>
+        <a href="admin-sales.html" class="btn btn-primary btn-full" style="margin-top:.8rem;">View Sales</a>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Admin / Commerce</p>
+          <h1>Orders Queue</h1>
+        </div>
+        <div class="actions">
+          <input class="search" type="text" placeholder="Search orders, clients, receipts...">
+          <a href="logout.html" class="btn btn-secondary">Logout</a>
+        </div>
+      </header>
+
+      <section class="grid4">
+        <article class="card stat">
+          <p class="mini">New Orders</p>
+          <h2>18</h2>
+          <span class="muted">Past 7 days</span>
+        </article>
+        <article class="card stat">
+          <p class="mini">Awaiting Payment</p>
+          <h2>2</h2>
+          <span class="muted">Follow up by DM or email</span>
+        </article>
+        <article class="card stat">
+          <p class="mini">Packing</p>
+          <h2>3</h2>
+          <span class="muted">Physical items on the table</span>
+        </article>
+        <article class="card stat">
+          <p class="mini">Delivered</p>
+          <h2>41</h2>
+          <span class="muted">Successful order completions this month</span>
+        </article>
+      </section>
+
+      <section class="grid2" style="margin-top:1rem;">
+        <article class="card table-card">
+          <div class="head">
+            <div>
+              <p class="eyebrow">Orders</p>
+              <h2>Recent Sales Queue</h2>
+            </div>
+            <a href="#" class="btn btn-primary">Create Manual Order</a>
+          </div>
+          <table class="table">
+            <thead>
+              <tr><th>Order ID</th><th>Buyer</th><th>Item</th><th>Total</th><th>Status</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>#FF-2014</td><td>Amara J.</td><td>Booty Builder Band Set</td><td>$38</td><td><span class="tag blue">Packing</span></td></tr>
+              <tr><td>#FF-2013</td><td>Jules M.</td><td>Summer Shred Kit</td><td>$99</td><td><span class="tag yellow">Paid / Unfulfilled</span></td></tr>
+              <tr><td>#FF-2012</td><td>Sophia L.</td><td>VIP Coaching</td><td>$199</td><td><span class="tag green">Booked</span></td></tr>
+              <tr><td>#FF-2011</td><td>Kelly P.</td><td>30-Day Shred Meal Guide</td><td>$24</td><td><span class="tag green">Delivered</span></td></tr>
+              <tr><td>#FF-2010</td><td>Rehema A.</td><td>Waist Trainer</td><td>$29</td><td><span class="tag red">Payment Issue</span></td></tr>
+            </tbody>
+          </table>
+        </article>
+
+        <article class="card panel">
+          <div class="head">
+            <div>
+              <p class="eyebrow">Fulfillment</p>
+              <h2>Update Order Status</h2>
+            </div>
+          </div>
+          <div class="form two">
+            <div>
+              <div class="mini" style="margin-bottom:.35rem;">Order ID</div>
+              <input class="input" value="#FF-2013">
+            </div>
+            <div>
+              <div class="mini" style="margin-bottom:.35rem;">Order Status</div>
+              <select class="select">
+                <option>Paid / Unfulfilled</option>
+                <option>Packing</option>
+                <option>Shipped</option>
+                <option>Delivered</option>
+              </select>
+            </div>
+            <div>
+              <div class="mini" style="margin-bottom:.35rem;">Delivery Method</div>
+              <select class="select">
+                <option>Courier delivery</option>
+                <option>Pickup</option>
+                <option>Digital email</option>
+              </select>
+            </div>
+            <div>
+              <div class="mini" style="margin-bottom:.35rem;">Tracking / Receipt</div>
+              <input class="input" value="KGL-DEL-4428">
+            </div>
+          </div>
+          <div class="form" style="margin-top:.9rem;">
+            <div>
+              <div class="mini" style="margin-bottom:.35rem;">Buyer Notes</div>
+              <textarea class="textarea">Client asked for same-day dropoff after 5 PM. Include resistance guide printout in the package.</textarea>
+            </div>
+          </div>
+          <div class="actions" style="margin-top:1rem;">
+            <a href="#" class="btn btn-primary">Save Update</a>
+            <a href="#" class="btn btn-secondary">Send Receipt</a>
+          </div>
+        </article>
+      </section>
+
+      <section class="grid2" style="margin-top:1rem;">
+        <article class="card panel">
+          <div class="head">
+            <div>
+              <p class="eyebrow">Action List</p>
+              <h2>What Needs Attention</h2>
+            </div>
+          </div>
+          <div class="list">
+            <div class="item flex">
+              <div>
+                <strong>2 manual payment confirmations</strong>
+                <div class="muted">Mobile money screenshots waiting for approval</div>
+              </div>
+              <span class="tag yellow">Pending</span>
+            </div>
+            <div class="item flex">
+              <div>
+                <strong>3 orders to pack</strong>
+                <div class="muted">Band sets and waist trainers should leave today</div>
+              </div>
+              <span class="tag blue">Packing</span>
+            </div>
+            <div class="item flex">
+              <div>
+                <strong>1 follow-up after failed payment</strong>
+                <div class="muted">Offer alternate payment link or direct invoice</div>
+              </div>
+              <span class="tag red">Urgent</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card panel">
+          <div class="head">
+            <div>
+              <p class="eyebrow">Client Delivery</p>
+              <h2>How Products Reach Buyers</h2>
+            </div>
+          </div>
+          <div class="list">
+            <div class="item">
+              <strong>Digital products</strong>
+              <div class="muted">Mark delivered once the guide, program, or download link has been sent successfully.</div>
+            </div>
+            <div class="item">
+              <strong>Physical products</strong>
+              <div class="muted">Move from paid to packing to shipped so the admin can track every handoff clearly.</div>
+            </div>
+            <div class="item">
+              <strong>Coaching offers</strong>
+              <div class="muted">Treat paid coaching as an order, then pass the client into bookings and client management.</div>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

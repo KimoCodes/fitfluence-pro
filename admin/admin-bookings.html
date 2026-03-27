@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookings Manager</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="brand">FitFunnel Pro <span class="role">Owner</span></div>
+      <nav class="nav">
+        <a href="index.html">Dashboard</a>
+        <a href="admin-programs.html">Programs</a>
+        <a href="admin-products.html">Store</a>
+        <a href="admin-orders.html">Orders</a>
+        <a href="admin-clients.html">Clients</a>
+        <a href="admin-bookings.html" class="active">Bookings</a>
+        <a href="admin-sales.html">Sales</a>
+        <a href="admin-content.html">Content</a>
+        <a href="admin-settings.html">Settings</a>
+      </nav>
+      <div class="sidebar-card">
+        <p class="mini">Booked Sales</p>
+        <h3 style="margin:.35rem 0;">5 Paid Calls This Week</h3>
+        <p class="muted">Coaching orders now flow through bookings after payment is confirmed</p>
+        <a href="admin-orders.html" class="btn btn-primary btn-full" style="margin-top:.8rem;">Check Paid Orders</a>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Admin / Owner</p>
+          <h1>Bookings Manager</h1>
+        </div>
+        <div class="actions">
+          <input class="search" type="text" placeholder="Search clients, sessions, paid bookings...">
+          <a href="logout.html" class="btn btn-secondary">Logout</a>
+        </div>
+      </header>
+
+      <section class="grid2">
+        <article class="card table-card">
+          <div class="head">
+            <div>
+              <p class="eyebrow">Bookings</p>
+              <h2>Session Requests</h2>
+            </div>
+            <a href="#" class="btn btn-primary">Create Slot</a>
+          </div>
+          <table class="table">
+            <thead>
+              <tr><th>Client</th><th>Session</th><th>Date</th><th>Status</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Amara J.</td><td>Discovery Call</td><td>Apr 2, 1:00 PM</td><td><span class="tag yellow">Pending</span></td></tr>
+              <tr><td>Noella B.</td><td>1-on-1 Coaching</td><td>Apr 2, 7:00 PM</td><td><span class="tag green">Confirmed</span></td></tr>
+              <tr><td>Group Session</td><td>Accountability Call</td><td>Apr 5, 6:00 PM</td><td><span class="tag blue">Open</span></td></tr>
+            </tbody>
+          </table>
+        </article>
+
+        <article class="card panel">
+          <div class="head">
+            <div>
+              <p class="eyebrow">Availability</p>
+              <h2>Set Time Slots</h2>
+            </div>
+          </div>
+          <div class="form two">
+            <div><div class="mini" style="margin-bottom:.35rem;">Date</div><input class="input" value="Apr 8, 2026"></div>
+            <div><div class="mini" style="margin-bottom:.35rem;">Session Type</div><select class="select"><option>1-on-1 Coaching</option><option>Discovery Call</option><option>Group Session</option></select></div>
+            <div><div class="mini" style="margin-bottom:.35rem;">Start Time</div><input class="input" value="7:00 PM"></div>
+            <div><div class="mini" style="margin-bottom:.35rem;">Seats</div><input class="input" value="1"></div>
+          </div>
+          <div class="actions" style="margin-top:1rem;">
+            <a href="#" class="btn btn-primary">Save Slot</a>
+            <a href="#" class="btn btn-secondary">Cancel</a>
+          </div>
+        </article>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

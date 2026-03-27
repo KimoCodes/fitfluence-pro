@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Progress | FitFunnel Client</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="client.css">
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="brand">FitFunnel Pro <span class="role">Client</span></div>
+      <nav class="nav"><a href="index.html" class="">Dashboard</a><a href="client-programs.html" class="">My Programs</a><a href="client-progress.html" class="active">Progress</a><a href="client-bookings.html" class="">Bookings</a><a href="client-nutrition.html" class="">Nutrition</a><a href="client-messages.html" class="">Messages</a><a href="client-store.html" class="">Store</a><a href="client-orders.html" class="">Orders</a><a href="client-settings.html" class="">Settings</a></nav>
+      <div class="sidebar-card">
+        <p class="mini">Current Plan</p>
+        <h3 style="margin:.35rem 0;">VIP Coaching</h3>
+        <p class="muted">Next check-in: Friday, 7:00 PM</p>
+        <a href="client-bookings.html" class="btn btn-primary btn-full" style="margin-top:.8rem;">Book Session</a>
+      </div>
+    </aside>
+    <main class="main">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Client Portal</p>
+          <h1>Progress Tracker</h1>
+        </div>
+        <div class="actions">
+          <input class="search" type="text" placeholder="Search workouts, meals, products...">
+          <a href="logout.html" class="btn btn-secondary">Logout</a>
+        </div>
+      </header>
+      
+<section class="grid2">
+  <article class="card panel">
+    <div class="head"><div><p class="eyebrow">Progress Tracking</p><h2>Weekly Consistency</h2></div></div>
+    <div class="chart"><div class="bars">
+      <div class="bar"><span style="height:55%"></span><label>W1</label></div>
+      <div class="bar"><span style="height:60%"></span><label>W2</label></div>
+      <div class="bar"><span style="height:66%"></span><label>W3</label></div>
+      <div class="bar"><span style="height:74%"></span><label>W4</label></div>
+      <div class="bar"><span style="height:78%"></span><label>W5</label></div>
+      <div class="bar"><span style="height:82%"></span><label>W6</label></div>
+      <div class="bar"><span style="height:88%"></span><label>W7</label></div>
+    </div></div>
+  </article>
+  <article class="card panel">
+    <div class="head"><div><p class="eyebrow">Update Progress</p><h2>Log Check-In</h2></div></div>
+    <div class="form two">
+      <div><div class="mini" style="margin-bottom:.35rem;">Current Weight</div><input class="input" value="64 kg"></div>
+      <div><div class="mini" style="margin-bottom:.35rem;">Waist Measurement</div><input class="input" value="72 cm"></div>
+    </div>
+    <div class="form" style="margin-top:.9rem;">
+      <div><div class="mini" style="margin-bottom:.35rem;">Energy / Performance Notes</div><textarea class="textarea">Felt stronger in lower-body sessions and recovered better this week.</textarea></div>
+    </div>
+    <div class="actions" style="margin-top:1rem;"><a href="#" class="btn btn-primary">Save Check-In</a></div>
+  </article>
+</section>
+
+    </main>
+  </div>
+</body>
+</html>

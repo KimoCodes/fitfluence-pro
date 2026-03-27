@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard | FitFunnel Client</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="client.css">
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="brand">FitFunnel Pro <span class="role">Client</span></div>
+      <nav class="nav"><a href="index.html" class="active">Dashboard</a><a href="client-programs.html" class="">My Programs</a><a href="client-progress.html" class="">Progress</a><a href="client-bookings.html" class="">Bookings</a><a href="client-nutrition.html" class="">Nutrition</a><a href="client-messages.html" class="">Messages</a><a href="client-store.html" class="">Store</a><a href="client-orders.html" class="">Orders</a><a href="client-settings.html" class="">Settings</a></nav>
+      <div class="sidebar-card">
+        <p class="mini">Current Plan</p>
+        <h3 style="margin:.35rem 0;">VIP Coaching</h3>
+        <p class="muted">Next check-in: Friday, 7:00 PM</p>
+        <a href="client-bookings.html" class="btn btn-primary btn-full" style="margin-top:.8rem;">Book Session</a>
+      </div>
+    </aside>
+    <main class="main">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Client Portal</p>
+          <h1>Welcome back, Noella</h1>
+        </div>
+        <div class="actions">
+          <input class="search" type="text" placeholder="Search workouts, meals, products...">
+          <a href="logout.html" class="btn btn-secondary">Logout</a>
+        </div>
+      </header>
+      
+<section class="grid4">
+  <article class="card stat"><p class="mini">Programs Active</p><h2>3</h2><span class="muted">2 new this month</span></article>
+  <article class="card stat"><p class="mini">Workouts Completed</p><h2>18</h2><span class="muted">+6 this week</span></article>
+  <article class="card stat"><p class="mini">Progress Score</p><h2>82%</h2><span class="muted">Consistency is strong</span></article>
+  <article class="card stat"><p class="mini">Next Booking</p><h2>Apr 2</h2><span class="muted">1-on-1 coaching call</span></article>
+</section>
+<section class="content" style="margin-top:1rem;">
+  <div class="grid2">
+    <article class="card panel">
+      <div class="head"><div><p class="eyebrow">Today's Focus</p><h2>Lower Body Strength + Core</h2></div><a href="client-program-detail.html" class="btn btn-primary">Start Workout</a></div>
+      <div class="list">
+        <div class="item flex"><div><strong>Warm-Up Circuit</strong><div class="muted">8 minutes • mobility + activation</div></div><span class="tag blue">Ready</span></div>
+        <div class="item flex"><div><strong>Glute Bridge Superset</strong><div class="muted">4 rounds • home/gym options included</div></div><span class="tag green">Main Set</span></div>
+        <div class="item flex"><div><strong>Core Finisher</strong><div class="muted">10 minutes • low equipment</div></div><span class="tag yellow">Optional</span></div>
+      </div>
+    </article>
+    <article class="card panel">
+      <div class="head"><div><p class="eyebrow">Weekly Progress</p><h2>Activity Trend</h2></div><a href="client-progress.html" class="btn btn-secondary">Open Progress</a></div>
+      <div class="chart"><div class="bars">
+        <div class="bar"><span style="height:45%"></span><label>Mon</label></div>
+        <div class="bar"><span style="height:70%"></span><label>Tue</label></div>
+        <div class="bar"><span style="height:55%"></span><label>Wed</label></div>
+        <div class="bar"><span style="height:82%"></span><label>Thu</label></div>
+        <div class="bar"><span style="height:90%"></span><label>Fri</label></div>
+        <div class="bar"><span style="height:62%"></span><label>Sat</label></div>
+        <div class="bar"><span style="height:76%"></span><label>Sun</label></div>
+      </div></div>
+    </article>
+    <article class="card panel">
+      <div class="head"><div><p class="eyebrow">Purchased Programs</p><h2>My Library</h2></div><a href="client-programs.html" class="btn btn-secondary">See All</a></div>
+      <div class="list">
+        <div class="item"><strong>30-Day Glute Growth</strong><div class="muted">12 workouts left</div><div class="kpi"><span style="width:68%"></span></div></div>
+        <div class="item"><strong>Fat Burn & Sculpt</strong><div class="muted">5 workouts left</div><div class="kpi"><span style="width:82%"></span></div></div>
+        <div class="item"><strong>VIP Coaching</strong><div class="muted">Weekly check-ins active</div><div class="kpi"><span style="width:48%"></span></div></div>
+      </div>
+    </article>
+    <article class="card panel">
+      <div class="head"><div><p class="eyebrow">Trainer Store</p><h2>Side Products You Can Buy</h2></div><a href="client-store.html" class="btn btn-primary">Open Store</a></div>
+      <div class="list">
+        <div class="item flex"><div><strong>Resistance Bands Set</strong><div class="muted">For glute work and home sessions</div></div><span class="tag green">$24</span></div>
+        <div class="item flex"><div><strong>Training Journal</strong><div class="muted">Track reps, goals, and body changes</div></div><span class="tag blue">$18</span></div>
+      </div>
+    </article>
+  </div>
+  <div class="grid2">
+    <article class="card panel"><div class="head"><div><p class="eyebrow">Coach Note</p><h2>This Week</h2></div></div><p class="muted">Focus on controlled reps and recovery. Your consistency is improving, so this week the goal is better intensity without rushing movements.</p></article>
+    <article class="card panel"><div class="head"><div><p class="eyebrow">Upcoming Bookings</p><h2>Sessions</h2></div></div><div class="list"><div class="item"><strong>1-on-1 Coaching Call</strong><div class="muted">Apr 2 • 7:00 PM</div></div><div class="item"><strong>Group Accountability Session</strong><div class="muted">Apr 5 • 6:00 PM</div></div></div></article>
+    <article class="card panel"><div class="head"><div><p class="eyebrow">Nutrition</p><h2>Today's Meal Focus</h2></div><a href="client-nutrition.html" class="btn btn-secondary">Meal Plan</a></div><div class="list"><div class="item"><strong>Breakfast</strong><div class="muted">Oats + fruit + protein</div></div><div class="item"><strong>Hydration</strong><div class="muted">2.5L target</div></div></div></article>
+    <article class="card panel"><div class="head"><div><p class="eyebrow">Quick Actions</p><h2>Shortcuts</h2></div></div><div class="list"><a class="item" href="client-progress.html"><strong>Log Progress</strong><div class="muted">Update weight, photos, and notes</div></a><a class="item" href="client-messages.html"><strong>Message Coach</strong><div class="muted">Ask for adjustments or support</div></a><a class="item" href="client-orders.html"><strong>View Orders</strong><div class="muted">Track side products and purchases</div></a></div></article>
+  </div>
+</section>
+
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Programs | FitFunnel Client</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="client.css">
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="brand">FitFunnel Pro <span class="role">Client</span></div>
+      <nav class="nav"><a href="index.html" class="">Dashboard</a><a href="client-programs.html" class="active">My Programs</a><a href="client-progress.html" class="">Progress</a><a href="client-bookings.html" class="">Bookings</a><a href="client-nutrition.html" class="">Nutrition</a><a href="client-messages.html" class="">Messages</a><a href="client-store.html" class="">Store</a><a href="client-orders.html" class="">Orders</a><a href="client-settings.html" class="">Settings</a></nav>
+      <div class="sidebar-card">
+        <p class="mini">Current Plan</p>
+        <h3 style="margin:.35rem 0;">VIP Coaching</h3>
+        <p class="muted">Next check-in: Friday, 7:00 PM</p>
+        <a href="client-bookings.html" class="btn btn-primary btn-full" style="margin-top:.8rem;">Book Session</a>
+      </div>
+    </aside>
+    <main class="main">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Client Portal</p>
+          <h1>My Programs</h1>
+        </div>
+        <div class="actions">
+          <input class="search" type="text" placeholder="Search workouts, meals, products...">
+          <a href="logout.html" class="btn btn-secondary">Logout</a>
+        </div>
+      </header>
+      
+<section class="grid2">
+  <article class="card table-card">
+    <div class="head"><div><p class="eyebrow">My Programs</p><h2>Purchased Library</h2></div><a href="client-program-detail.html" class="btn btn-primary">Open Program</a></div>
+    <table class="table">
+      <thead><tr><th>Program</th><th>Format</th><th>Completion</th><th>Status</th></tr></thead>
+      <tbody>
+        <tr><td>30-Day Glute Growth</td><td>Digital</td><td>68%</td><td><span class="tag green">Active</span></td></tr>
+        <tr><td>Fat Burn & Sculpt</td><td>Digital</td><td>82%</td><td><span class="tag blue">Almost Done</span></td></tr>
+        <tr><td>VIP Coaching</td><td>Service</td><td>48%</td><td><span class="tag yellow">Check-In This Week</span></td></tr>
+      </tbody>
+    </table>
+  </article>
+  <article class="card panel">
+    <div class="head"><div><p class="eyebrow">Program Preview</p><h2>30-Day Glute Growth</h2></div></div>
+    <div class="list">
+      <div class="item"><strong>Week 1</strong><div class="muted">Foundation, activation, tempo work</div></div>
+      <div class="item"><strong>Week 2</strong><div class="muted">Increased volume and stronger form cues</div></div>
+      <div class="item"><strong>Week 3</strong><div class="muted">Progressive overload and fatigue control</div></div>
+      <div class="item"><strong>Week 4</strong><div class="muted">Final push and photo check-in</div></div>
+    </div>
+    <a href="client-program-detail.html" class="btn btn-primary" style="margin-top:1rem;">Continue Program</a>
+  </article>
+</section>
+
+    </main>
+  </div>
+</body>
+</html>
